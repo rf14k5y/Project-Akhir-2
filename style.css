@@ -1,0 +1,86 @@
+body {
+    text-align: center;
+    background: skyblue;
+    font-family: Arial;
+}
+
+#info {
+    margin: 10px;
+    font-size: 18px;
+}
+
+#gameArea {
+    width: 400px;
+    height: 500px;
+    margin: auto;
+    background: white;
+    border: 2px solid black;
+    position: relative;
+    overflow: hidden;
+}
+
+#basket {
+    width: 80px;
+    position: absolute;
+    bottom: 10px;
+    left: 160px;
+}
+
+#fruit {
+    width: 40px;
+    position: absolute;
+    top: 0;
+}
+
+/* GAME OVER STYLE */
+#gameOver {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0,0,0,0.7);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s;
+}
+
+#gameOver.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+#gameOver .box {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+
+    transform: scale(0.7);
+    transition: 0.3s;
+}
+
+#gameOver.show .box {
+    transform: scale(1);
+}
+
+#gameOver button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+
+    border: none;
+    border-radius: 8px;
+    background: #4CAF50;
+    color: white;
+}
+
+#gameOver button:hover {
+    background: #45a049;
+}

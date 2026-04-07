@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Game Tangkap Buah</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Game Tangkap Buah</h2>
+
+<div id="info">
+    <span id="score">Skor: 0</span>
+    <span id="miss">Gagal: 0 / 5</span>
+</div>
+
+<div id="gameArea">
+    <img id="basket" src="img/keranjang.png">
+    <img id="fruit">
+</div>
+
+<!-- GAME OVER -->
+<div id="gameOver">
+    <div class="box">
+        <h2>Game Over</h2>
+        <p id="finalScore"></p>
+        <button onclick="restartGame()">Main Lagi</button>
+    </div>
+</div>
+
+<!-- SOUND -->
+<audio id="catchSound" src="sound/tangkap.mp3"></audio>
+<audio id="loseSound" src="sound/gagal.mp3"></audio>
+<audio id="bgMusic" src="sound/bg.mp3" loop></audio>
+
+<script src="script.js"></script>
+</body>
+</html>
